@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Factions>
+
+    <Faction Tag="IEC" Founder="Jaden Malahki">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>InterplanetaryEnforcementCorpsFaction</SubtypeId>
+      </Id>
+      <DisplayName>Interplanetary Enforcement Corps</DisplayName>
+      <Description>The IEC is an encompassing fleet, structural logistics, and ground force dedicated to the protection and service of interplanetary citizens.</Description>
+      <IsDefault>true</IsDefault>
+      <DefaultRelation>Enemies</DefaultRelation>
+      <AcceptHumans>true</AcceptHumans>
+      <AutoAcceptMember>false</AutoAcceptMember>
+    </Faction>
+
+  </Factions>
+</Definitions>

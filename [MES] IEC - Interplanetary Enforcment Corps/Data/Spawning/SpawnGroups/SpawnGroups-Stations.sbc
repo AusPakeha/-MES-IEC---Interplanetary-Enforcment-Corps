@@ -1,0 +1,190 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <!--
+    
+    
+    -->
+   
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-SeflContainedOutpost</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnGroupEnabled:true]
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-InstallationSmall]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationProfiles:MES-Manipulation-RivalAi]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Self-contained Outpost">
+          <Position>
+            <X>0.0</X>
+            <Y>9.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>IEC-Behavior-BasicInstallation</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-RefuelingOutpost</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:IEC-SpawnConditions-StationPlanet]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:IEC-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Refueling Outpost">
+          <Position>
+            <X>0.0</X>
+            <Y>8.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>IEC-Behavior-Installation</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Razor Gatling Drone">
+          <Position>
+            <X>-200.0</X>
+            <Y>300.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>IEC-Behavior-Drone</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Razor Gatling Drone">
+          <Position>
+            <X>200.0</X>
+            <Y>300.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>IEC-Behavior-Drone</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-RefineryOutpost</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:IEC-SpawnConditions-StationPlanet]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:IEC-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Refinery Outpost">
+          <Position>
+            <X>0.0</X>
+            <Y>8.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>IEC-Behavior-Installation</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Razor Gatling Drone">
+          <Position>
+            <X>-200.0</X>
+            <Y>300.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>IEC-Behavior-Drone</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Razor Gatling Drone">
+          <Position>
+            <X>200.0</X>
+            <Y>300.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>IEC-Behavior-Drone</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-CoreAlpha</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:IEC-SpawnConditions-StationPlanet]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:IEC-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Core Alpha">
+          <Position>
+            <X>0.0</X>
+            <Y>70.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>IEC-Behavior-Installation</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Razor Gatling Drone">
+          <Position>
+            <X>-200.0</X>
+            <Y>300.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>IEC-Behavior-Drone</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Razor Gatling Drone">
+          <Position>
+            <X>200.0</X>
+            <Y>300.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>0</Speed>
+          <Behaviour>IEC-Behavior-Drone</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+</Definitions>

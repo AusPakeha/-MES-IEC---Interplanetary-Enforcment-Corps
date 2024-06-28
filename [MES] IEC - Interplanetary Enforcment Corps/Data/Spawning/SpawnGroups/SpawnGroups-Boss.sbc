@@ -1,0 +1,201 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-EFB</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:IEC-SpawnConditions-Boss]
+
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+
+        [UseFirstConditionsAsPersistent:true]
+
+        [ManipulationGroups:IEC-Manipulation-Group]
+        [ManipulationProfiles:IEC-Manipulation-Propulsion]
+        [MaxGravity:0.1]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+
+        [MinimumPlayerTime:1200]
+        [MaximumPlayerTime:2100]
+        [FailedDroneSpawnResetsPlayerTime:true]
+		
+		    [MinimumPlanetAltitude:5]
+        [AiEnabledReady:true]
+        
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [UseStaticGuns:true]
+        [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+
+        [RandomizeWeapons:false]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Enforcius Floating base (EFB)">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Boss</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-UnanigmusBC</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:IEC-SpawnConditions-Boss]
+
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+
+        [UseFirstConditionsAsPersistent:true]
+
+        [ManipulationGroups:IEC-Manipulation-Group]
+        [ManipulationProfiles:IEC-Manipulation-Propulsion]
+        [MaxGravity:0.1]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+
+        [MinimumPlayerTime:1200]
+        [MaximumPlayerTime:2100]
+        [FailedDroneSpawnResetsPlayerTime:true]
+		
+		    [MinimumPlanetAltitude:5]
+        [AiEnabledReady:true]
+        
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [UseStaticGuns:true]
+        [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+
+        [RandomizeWeapons:false]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Unanigmus Battle Cruiser">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Boss</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-Iris</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:IEC-SpawnConditions-Boss]
+
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+
+        [UseFirstConditionsAsPersistent:true]
+
+        [ManipulationGroups:IEC-Manipulation-Group]
+        [ManipulationProfiles:IEC-Manipulation-Propulsion]
+        [MaxGravity:0.1]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+
+        [MinimumPlayerTime:1200]
+        [MaximumPlayerTime:2100]
+        [FailedDroneSpawnResetsPlayerTime:true]
+		
+		    [MinimumPlanetAltitude:5]
+        [AiEnabledReady:true]
+        
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [UseStaticGuns:true]
+        [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+
+        [RandomizeWeapons:false]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Super Carrier CV-09 Iris">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Boss</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+</Definitions>

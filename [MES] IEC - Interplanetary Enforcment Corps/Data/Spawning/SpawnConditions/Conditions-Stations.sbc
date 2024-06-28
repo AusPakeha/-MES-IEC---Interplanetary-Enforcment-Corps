@@ -1,0 +1,57 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-SpawnConditions-StationPlanet</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Small]
+
+        [InstallationSpawnsOnWaterSurface:false]
+        [InstallationSpawnsOnDryLand:true]
+
+        [SkipTerrainCheck:true]
+
+        [FactionOwner:IEC]
+
+        [ForceStaticGrid:true]
+
+        [UseRemoteControlCodeRestrictions:true]
+        [RemoteControlCode:IECStation]
+        [RemoteControlCodeMinDistance:25000]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-SpawnConditions-StationSpace</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [SpaceRandomEncounter:true]
+
+        [FactionOwner:IEC]
+
+        [ForceStaticGrid:true]
+
+        [UseRemoteControlCodeRestrictions:true]
+        [RemoteControlCode:IECStation]
+        [RemoteControlCodeMinDistance:100000]
+      </Description>
+
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

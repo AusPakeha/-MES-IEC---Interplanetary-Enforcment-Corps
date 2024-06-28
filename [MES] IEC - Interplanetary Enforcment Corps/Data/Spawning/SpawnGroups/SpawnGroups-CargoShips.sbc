@@ -1,0 +1,918 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-AscunerHPB</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+
+        [SpawnConditionGroups:IEC-SpawnConditionsGroup-Easy]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:IEC-Manipulation-Group]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Ascunder Heavy Patrol Boat">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Ascunder Coastal Gun Boat">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Ascunder Coastal Gun Boat">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-Deepswell</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+
+        [SpawnConditionGroups:IEC-SpawnConditions-Easy]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:IEC-Manipulation-Group]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Deepswell Recon Sub">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-CargoShip</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-HeavyAssaultCruiser</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+
+        [SpawnConditionGroups:IEC-SpawnConditionsGroup-Medium]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:IEC-Manipulation-Group]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Heavy Assault Cruiser">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Ascunder Heavy Patrol Boat">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Ascunder Coastal Gun Boat">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-HeavyRailgunCruiser</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+
+        [SpawnConditionGroups:IEC-SpawnConditionsGroup-Medium]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:IEC-Manipulation-Group]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Heavy Railgun Cruiser">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Ascunder Heavy Patrol Boat">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Ascunder Coastal Gun Boat">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-LanceDestroyer</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+
+        [SpawnConditionGroups:IEC-SpawnConditionsGroup-Medium]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:IEC-Manipulation-Group]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Lance Destroyer">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Ascunder Heavy Patrol Boat">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Ascunder Coastal Gun Boat">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-PrecisionAssaultCruiser</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+
+        [SpawnConditionGroups:IEC-SpawnConditionsGroup-Medium]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:IEC-Manipulation-Group]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Precision Assault Cruiser">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Ascunder Heavy Patrol Boat">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Ascunder Coastal Gun Boat">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-RapidAssaultCruiser</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+
+        [SpawnConditionGroups:IEC-SpawnConditionsGroup-Medium]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:IEC-Manipulation-Group]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Rapid Assault Cruiser">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Ascunder Heavy Patrol Boat">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Ascunder Coastal Gun Boat">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-TridentDestroyer</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+
+        [SpawnConditionGroups:IEC-SpawnConditionsGroup-Medium]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:IEC-Manipulation-Group]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Trident Destroyer">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Ascunder Heavy Patrol Boat">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Ascunder Coastal Gun Boat">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-Galaxius</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:IEC-SpawnConditionsGroup-Atmo]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+
+        [AtmosphericCargoShip:true]
+		    [AtmosphericCargoShipChance:70]
+
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:IEC-Manipulation-Group]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Galaxius Exploration Corvette">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Razor Gatling Drone">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Razor Gatling Drone">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-MalestromSuperHaulerA</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:IEC-SpawnConditionsGroup-Atmo]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+
+        [AtmosphericCargoShip:true]
+		    [AtmosphericCargoShipChance:70]
+
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:IEC-Manipulation-Group]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Malestrom Super Hauler-A">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Razor Gatling Drone">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Razor Gatling Drone">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-TempestTamer</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:IEC-SpawnConditionsGroup-Atmo]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+
+        [AtmosphericCargoShip:true]
+		    [AtmosphericCargoShipChance:70]
+
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:IEC-Manipulation-Group]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) HILACAN-G Tempest Tamer">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Razor AutoCannon Drone">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Razor Gatling Drone">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-GeminiMkI</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:IEC-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-INC) Gemini Mk I">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-INC) Hired Gun">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-INC) Hired Gun">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-GopherIITransport</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:IEC-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-INC) Gopher II Transport">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-INC) Hired Gun">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-INC) Hired Gun">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-RWIAmazonian</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:IEC-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-INC) RWI Amazonian">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-INC) Hired Gun">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-INC) Hired Gun">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-SpawnGroup-Ubumboo</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:MES-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:IEC]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+        [ManipulationGroups:IEC-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-INC) Ubumboo">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-INC) Hired Gun">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-INC) Hired Gun">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>IEC-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+</Definitions>
