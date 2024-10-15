@@ -1,0 +1,128 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-TriggerGroup-PreSpawn</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI TriggerGroup]
+
+        [Triggers:IFM-Trigger-StopRotation]
+        [Triggers:IFM-Trigger-DisableSpawners]
+
+      </Description>
+    </EntityComponent>
+    
+    <!--  StopRotation  -->
+        
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Trigger-StopRotation</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Timer]
+        [MinCooldownMs:15000]
+        [MaxCooldownMs:30000]
+
+        [Conditions:IFM-Condition-StopRotation]
+
+        [MaxActions:-1]
+        [Actions:IFM-Action-StopRotation]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Condition-StopRotation</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Condition]
+
+        [UseConditions:true]
+
+        [CheckGridSpeed:true]
+        [MaxGridSpeed:1]
+        
+        [UnderwaterCheck:true]
+        [IsUnderwater:false]
+        [MinDistanceUnderwater:10]
+
+        [BehaviorModeCheck:true]
+        [CurrentBehaviorMode:EngageTarget]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Action-StopRotation</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [BehaviorSpecificEventA:true]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:IFM-Trigger-CalypsoSpawner]
+        [EnableTriggerNames:IFM-Trigger-HowlSpawner]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:IFM-Trigger-CalypsoSpawner]
+        [ResetTriggerCooldownNames:IFM-Trigger-HowlSpawner]
+
+      </Description>
+    </EntityComponent>
+    
+    <!--  DisableSpawners  -->
+      
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Trigger-DisableSpawners</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:BehaviorTriggerD]
+
+        [MaxActions:-1]
+        [Actions:IFM-Action-DisableSpawners]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Action-DisableSpawners</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:IFM-Trigger-CalypsoSpawner]
+        [DisableTriggerNames:IFM-Trigger-HowlSpawner]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:IFM-Trigger-StopRotation]
+
+      </Description>
+    </EntityComponent>
+  </EntityComponents>
+</Definitions>

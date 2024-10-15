@@ -1,0 +1,58 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-Behavior-Fighters</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+        [BehaviorName:Fighter]
+
+        [AutopilotData:IEC-Autopilot-Fighters]
+        [TargetData:IEC-Targeting-Main]
+		    [TargetData:IEC-Targeting-Second]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-Autopilot-Fighters</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [FlyLevelWithGravity:true]
+        [WaypointTolerance:40]
+        [IdealMinSpeed:20]
+        [IdealMaxSpeed:50]
+        [IdealPlanetAltitude:100]
+        [MinimumPlanetAltitude:50]
+        [MaxSpeedTolerance:5]
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:500]
+
+		    [EngageDistancePlanet:600]
+        [DisengageDistancePlanet:800]
+		
+        [AllowStrafing:true]
+        [StrafeMinDurationMs:10000]
+        [StrafeMaxDurationMs:30000]
+
+        [StrafeMinCooldownMs:10000]
+        [StrafeMaxCooldownMs:30000]
+
+        [StrafeMinimumTargetDistance:300]
+        [StrafeSpeedCutOff:60]
+        [StrafeDistanceCutOff:150]
+
+      </Description>
+    </EntityComponent>
+  </EntityComponents>
+</Definitions>

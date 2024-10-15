@@ -1,0 +1,153 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-TriggerGroup-Broadside</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI TriggerGroup]
+
+        [Triggers:IFM-Trigger-Broadside]
+        [Triggers:IFM-Trigger-StartBroadside]
+        [Triggers:IFM-Trigger-EndBroadside]
+
+      </Description>
+
+    </EntityComponent>
+    
+    <!--  Broadside  -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Trigger-Broadside</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:false]
+        [Type:Timer]
+        [MinCooldownMs:60000]
+        [MaxCooldownMs:120000]
+        [StartsReady:true]
+        
+        [MaxActions:-1]
+        [ActionExecution:Sequential]
+        [Actions:IFM-Action-BroadsideStarboard]
+        [Actions:IFM-Action-BroadsidePort]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Action-BroadsideStarboard</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [ChangeRotationDirection:true]
+        [RotationDirection:Right]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Action-BroadsidePort</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [ChangeRotationDirection:true]
+        [RotationDirection:Left]
+
+      </Description>
+    </EntityComponent>
+    
+    <!--  StartBroadside  -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Trigger-StartBroadside</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:BehaviorTriggerA]
+        [StartsReady:true]
+
+        [MaxActions:-1]
+        [Actions:IFM-Action-StartBroadside]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Action-StartBroadside</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:IFM-Trigger-Broadside]
+        
+        [ManuallyActivateTrigger:true]
+        [ManuallyActivatedTriggerNames:IFM-Trigger-Broadside]
+        [ForceManualTriggerActivation:true]
+
+      </Description>
+    </EntityComponent>
+
+    <!--  EndBroadside  -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Trigger-EndBroadside</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:BehaviorTriggerB]
+        [StartsReady:true]
+
+        [MaxActions:-1]
+        [Actions:IFM-Action-EndBroadside]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Action-EndBroadside</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:IFM-Trigger-Broadside]
+        [ChangeRotationDirection:true]
+        [RotationDirection:Forward]
+
+      </Description>
+    </EntityComponent>
+  </EntityComponents>
+</Definitions>

@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+    <!--Trident-->
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-Trident</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IEC-Manipulation-MixedLoot]
+        [SpawnConditionsProfiles:IEC-SpawnConditions-Hard]
+			
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+        [UseStaticGuns:true]
+        [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+
+        [RandomizeWeapons:false]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Trident Destroyer">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-HowlOfTheAbyss</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--Guardian Carrier-->
+	  <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-Trimaran</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IEC-Manipulation-MixedLoot]
+		    [SpawnConditionsProfiles:IEC-SpawnConditions-Hard]
+		
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+	
+        [RandomizeWeapons:false]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+		
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>6.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Trimaran Carrier">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-CalypsoEnvy2</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-SCIris</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IEC-Manipulation-MixedLoot]
+		    [SpawnConditionsProfiles:IEC-SpawnConditions-Hard]
+		
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+	
+        [RandomizeWeapons:false]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+		
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>6.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Super Carrier CV-09 Iris">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>5.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Iris</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+</Definitions>

@@ -1,0 +1,305 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Behavior-CalypsoEnvy</SubtypeId>
+      </Id>
+      <Description>
+
+			[RivalAI Behavior]
+			[BehaviorName:Nautical]
+
+			[AutopilotData:IFM-Autopilot-CalypsoEnvy]
+			[TargetData:IFM-Targeting-Main]
+			[TargetData:IFM-Targeting-Second]		
+
+			[TriggerGroups:IFM-TriggerGroup-PreSpawn]
+			
+			[Triggers:IFM-EnvyTriggerA]
+			[Triggers:IFM-EnvyTriggerB]
+
+			[Triggers:IEC-Trigger-BotCrew]
+
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Autopilot-CalypsoEnvy</SubtypeId>
+      </Id>
+      <Description>
+
+			[RivalAI Autopilot]
+
+			[DisableInertiaDampeners:false]
+			[SlowDownOnWaypointApproach:false]
+			[ExtraSlowDownDistance:0]
+			[FlyLevelWithGravity:false]
+			[AllowStrafing:false]
+			[WaypointTolerance:30]
+			[IdealMinSpeed:10]
+			[IdealMaxSpeed:100]
+
+			[RotationMultiplier:0.50]
+
+			[UseVelocityCollisionEvasion:true]
+			[CollisionEvasionWaypointDistance:100]
+			[WaypointWaitTimeTrigger:15]
+
+			[EngageDistancePlanet:1000]
+			[DisengageDistancePlanet:1000]
+
+      </Description>
+	</EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>IFM-EnvyTriggerA</SubtypeId>
+      </Id>
+      <Description>
+
+			[RivalAI Trigger]
+		
+			[Type:PlayerNear]
+			[UseTrigger:true]
+			[TargetDistance:2800]
+			[StartsReady:true]
+			[MaxActions:1]
+		
+			[Actions:IFM-EnvyActionA]
+      
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>IFM-EnvyActionA</SubtypeId>
+      </Id>
+      <Description>
+
+			[RivalAI Action]
+			
+			[ChangeAutopilotSpeed:true]
+			[NewAutopilotSpeed:0]
+		
+			[UseChatBroadcast:true]
+			[ChatData:IFM-EnvyChatA]
+			
+			[SpawnEncounter:true]
+			[Spawner:IFM-EnvySpawnerA]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>IFM-EnvyChatA</SubtypeId>
+      </Id>
+      <Description>
+
+			[RivalAI Chat]
+		
+			[UseChat:true]
+			[StartsReady:true]
+			[Chance:100]
+			[MaxChats:1]
+			[BroadcastRandomly:true]
+			[SendToAllOnlinePlayers:false]
+			[IgnoreAntennaRequirement:false]
+		
+			[Author:IFM Captain]
+			[Color:Red]
+
+			[ChatMessages:{PlayerName},I know your #J~rmV! Now find out mine!]
+			[ChatAudio:ArcHudGPSNotification2]
+			[BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>IFM-EnvySpawnerA</SubtypeId>
+      </Id>
+      <Description>
+
+			[RivalAI Spawn]
+
+			[UseSpawn:true]
+			[StartsReady:false]
+			[SpawnMinCooldown:30000]
+			[SpawnMaxCooldown:160000]
+			[MaxSpawns:-1]
+		
+			[SpawnGroups:IFM-Group-MixRazor]
+		
+			[UseRelativeSpawnPosition:false]
+			[MinDistance:100]
+			[MaxDistance:150]
+			[MinAltitude:500]
+			[MaxAltitude:800]
+			[IgnoreSafetyChecks:true]
+      
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>IFM-EnvyTriggerB</SubtypeId>
+      </Id>
+      <Description>
+
+			[RivalAI Trigger]
+		
+			[Type:PlayerNear]
+			[UseTrigger:true]
+			[TargetDistance:2000]
+			[StartsReady:true]
+			[MaxActions:1]
+			[MinCooldownMs:150000]
+			[MaxCooldownMs:180000]
+			[Actions:IFM-EnvyActionB]
+		
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>IFM-EnvyActionB</SubtypeId>
+      </Id>
+      <Description>
+
+			[RivalAI Action]
+			
+			[ChangeAutopilotSpeed:true]
+			[NewAutopilotSpeed:25]
+			
+			[UseChatBroadcast:true]
+			[ChatData:IFM-EnvyChatB]
+		
+			[SpawnEncounter:true]
+			[Spawner:IFM-EnvySpawnerB]
+	
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>IFM-EnvyChatB</SubtypeId>
+      </Id>
+      <Description>
+
+			[RivalAI Chat]
+		
+			[UseChat:true]
+			[StartsReady:true]
+			[Chance:100]
+			[MaxChats:1]
+			[BroadcastRandomly:true]
+			[SendToAllOnlinePlayers:false]
+			[IgnoreAntennaRequirement:false]
+		
+			[Author:IFM Captain]
+			[Color:Red]
+		
+			[ChatMessages:{PlayerName} You have been -SgW5XJ! Crew!, Ready +44xcV' k~ deploy defence oYmj-!]
+			[ChatAudio:ArcHudGPSNotification2]
+			[BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>IFM-EnvySpawnerB</SubtypeId>
+      </Id>
+      <Description>
+
+			[RivalAI Spawn]
+
+			[UseSpawn:true]
+			[StartsReady:true]
+			[SpawnMinCooldown:120000]
+			[SpawnMaxCooldown:180000]
+			[MaxSpawns:-1]
+		
+			[SpawnGroups:IFM-Group-MixRazor]
+		
+			[UseRelativeSpawnPosition:false]
+			[MinDistance:1000]
+			[MaxDistance:1500]
+			[MinAltitude:800]
+			[MaxAltitude:1200]
+			[IgnoreSafetyChecks:true]
+      
+      </Description>
+    </EntityComponent>
+
+<!-- [NPC's] Defence Bots -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>IFM-DefenseBots-Trigger</SubtypeId>
+			</Id>
+			<Description>
+
+			[RivalAI Trigger]
+			
+			[UseTrigger:true]
+			[StartsReady:true]
+			[Type:Compromised]
+			
+			[Actions:IFM-DefensBots-Action-Spawn]		
+
+			</Description>
+		</EntityComponent>
+    			
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		  <Id>
+			<TypeId>Inventory</TypeId>
+			<SubtypeId>IFM-DefensBots-Action-Spawn</SubtypeId>
+		  </Id>
+		  <Description>
+
+			[RivalAI Action]
+
+			[SpawnEncounter:true]
+			[Spawner:IFM-DefenseBots-Spawner]
+
+		  </Description>
+		</EntityComponent>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		  <Id>
+			<TypeId>Inventory</TypeId>
+			<SubtypeId>IFM-DefenseBots-Spawner</SubtypeId>
+		  </Id>
+		  <Description>
+
+			[RivalAI Spawn]
+
+			[UseSpawn:true]
+
+			[SpawnMinCooldown:1]
+			[SpawnMaxCooldown:2]
+			[MaxSpawns:1]
+			[SpawningType:Creature]
+			[SpawnGroups:IFM-DefenseBots]
+			[ProcessAsAdminSpawn:true]
+
+		  </Description>
+		</EntityComponent>
+
+  </EntityComponents>
+</Definitions>

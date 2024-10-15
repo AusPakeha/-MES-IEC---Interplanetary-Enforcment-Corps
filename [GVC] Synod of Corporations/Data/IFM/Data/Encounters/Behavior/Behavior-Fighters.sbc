@@ -1,0 +1,58 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Behavior-Fighters</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+        [BehaviorName:Fighter]
+
+        [AutopilotData:IFM-Autopilot-Fighters]
+        [TargetData:IFM-Targeting-Main]
+		    [TargetData:IFM-Targeting-Second]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Autopilot-Fighters</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [FlyLevelWithGravity:true]
+        [WaypointTolerance:40]
+        [IdealMinSpeed:20]
+        [IdealMaxSpeed:50]
+        [IdealPlanetAltitude:100]
+        [MinimumPlanetAltitude:50]
+        [MaxSpeedTolerance:5]
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:500]
+
+		    [EngageDistancePlanet:600]
+        [DisengageDistancePlanet:800]
+		
+        [AllowStrafing:true]
+        [StrafeMinDurationMs:1000]
+        [StrafeMaxDurationMs:3000]
+
+        [StrafeMinCooldownMs:1000]
+        [StrafeMaxCooldownMs:3000]
+
+        [StrafeMinimumTargetDistance:300]
+        [StrafeSpeedCutOff:60]
+        [StrafeDistanceCutOff:150]
+
+      </Description>
+    </EntityComponent>
+  </EntityComponents>
+</Definitions>

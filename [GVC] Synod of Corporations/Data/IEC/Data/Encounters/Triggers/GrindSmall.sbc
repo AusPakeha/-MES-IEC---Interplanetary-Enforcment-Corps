@@ -1,0 +1,77 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-Trigger-GrindSmall</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Damage]
+        [DamageTypes:Grind]
+        [MinCooldownMs:250]
+        [MaxCooldownMs:251]
+        [StartsReady:true]
+        [MaxActions:1]
+        [Actions:IEC-Action-GrindSmall]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-Action-GrindSmall</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [UseChatBroadcast:true]
+        [ChatData:IEC-Chat-GrindSmall]
+
+        [SelfDestruct:true]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-Chat-GrindSmall</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:-1]
+        [BroadcastRandomly:true]
+        [Author:{AntennaName}]
+        [Color:Red]
+
+        [MinTime:30]
+        [MaxTime:31]
+
+        [ChatMessages:Reavers, the courrupt and now some space jockey! Who did i annoy?]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Get that space monkey of my boat!]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Crew, ready shotguns!]
+        [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

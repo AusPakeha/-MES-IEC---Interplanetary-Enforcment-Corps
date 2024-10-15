@@ -1,0 +1,287 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Trigger-Chatting</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+		
+        [Triggers:MarinePirateEncounters-Trigger-A]
+        [Triggers:MarinePirateEncounters-Trigger-B]
+        [Triggers:MarinePirateEncounters-Trigger-C]
+
+      </Description>
+    </EntityComponent>
+	
+	  <!-- Trigger-A -->
+	  <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>Triggers:MarinePirateEncounters-Trigger-A</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+      [TargetDistance:3000]
+      [UseTrigger:true]
+      [StartsReady:true]
+	  
+      [MaxActions:1]
+	  
+      [Actions:MarinePirateEncounters-Action-Chatting]
+      
+      </Description>
+    </EntityComponent>
+	
+	  <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>MarinePirateEncounters-Action-Chatting</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+        
+        [UseChatBroadcast:true]
+        [ChatData:MarinePirateEncounters-Chat-ChatA]
+	
+
+      </Description>
+    </EntityComponent>
+	
+	  <!-- Chat-A -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Chat-ChatA</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+	    [SendToAllOnlinePlayers:false]
+	    [IgnoreAntennaRequirement:false]
+      
+      [Author:IEC Captain]
+      [Color:Red]
+      
+      [ChatMessages:{PlayerName},This is the captain of the IEC ship your approching, Leave now or prepare to be fired upon!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+	
+	  <!-- Trigger-B -->
+	  <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>MarinePirateEncounters-Trigger-B</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:PlayerNear]
+      [UseTrigger:true]
+      [TargetDistance:2000]
+      
+      [MaxActions:1]
+      [MinCooldownMs:120000]
+      [MinCooldownMs:180000]
+      
+      [Actons:MarinePirateEncounters-Action-B]
+
+      </Description>
+    </EntityComponent>
+	
+	  <!-- Action-B -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>MarinePirateEncounters-Action-B</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+      [UseChatBroadcast:true]
+	  
+      [SpawnEncounter:true]
+      [Spawner:MarinePirateEncounters-Spawner-B]
+	  
+      [ChatData:MarinePirateEncounters-Chat-B]
+
+      </Description>
+    </EntityComponent>
+
+	  <!-- Chat-B -->	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>MarinePirateEncounters-Chat-B</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      [SendToAllOnlinePlayers:false]
+      [IgnoreAntennaRequirement:false]
+      
+      [Author:IEC Captain]
+      [Color:Red]
+      
+      [ChatMessages:{PlayerName} You have been warned! Deploying Defence Drones!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+      
+      </Description>
+    </EntityComponent>
+	
+	  <!-- Spawner-B -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>MarinePirateEncounters-Spawner-B</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+      
+      [UseSpawn:true]
+      
+      [SpawnMinCooldown:30]
+      [SpawnMaxCooldown:60]
+      [MaxSpawns:1]
+      
+      [SpawnGroups:MarinePirateEncounters-Group-RazorG]
+      [SpawnGroups:MarinePirateEncounters-Group-RazorA]	  
+      
+      [UseRelativeSpawnPosition:false]
+      [MinDistance:100]
+      [MaxDistance:150]
+      [MinAltitude:550]
+      [MaxAltitude:850]
+      [IgnoreSafetyChecks:true]
+      
+      </Description>
+    </EntityComponent>
+	
+    <!-- Trigger-C -->
+	  <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>MarinePirateEncounters-Trigger-C</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Trigger]
+	  
+      [Type:Damage]
+      [DamageType:Any]
+      [UseTrigger:true]
+      [TargetDistance:1000]
+      
+      [MaxActions:1]
+      [MinCooldownMs:120000]
+      [MinCooldownMs:180000]
+      
+      [Actons:MarinePirateEncounters-Action-C]
+
+      </Description>
+    </EntityComponent>
+	
+	  <!-- Action-C -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>MarinePirateEncounters-Action-C</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+      [UseChatBroadcast:true]
+	  
+      [SpawnEncounter:true]
+      [Spawner:MarinePirateEncounters-Spawner-C]
+	  
+      [ChatData:MarinePirateEncounters-Chat-C]
+
+      </Description>
+      
+    </EntityComponent>
+
+	  <!-- Chat-C -->	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>MarinePirateEncounters-Chat-C</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [Chance:100]
+      [MaxChats:1]
+      [BroadcastRandomly:true]
+      [SendToAllOnlinePlayers:false]
+      [IgnoreAntennaRequirement:false]
+      
+      [Author:IEC Captain]
+      [Color:Red]
+      
+      [ChatMessages:{PlayerName} You have been warned multiple times! Deploying Defence Craft!]
+      [ChatAudio:ArcHudGPSNotification2]
+      [BroadcastChatType:Chat]
+      
+      </Description>
+    </EntityComponent>
+	
+	  <!-- Spawner-C -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>MarinePirateEncounters-Spawner-C</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Spawn]
+      
+      [UseSpawn:true]
+      
+      [StartsReady:true]
+      [SpawnMinCooldown:30]
+      [SpawnMaxCooldown:60]
+      [MaxSpawns:1]
+      
+      [SpawnGroups:MarinePirateEncounters-Group-Hornet]
+      
+      [UseRelativeSpawnPosition:false]
+      [MinDistance:100]
+      [MaxDistance:150]
+      [MinAltitude:550]
+      [MaxAltitude:850]
+      [IgnoreSafetyChecks:true]
+      
+      </Description>
+    </EntityComponent>
+  </EntityComponents>
+</Definitions>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <Definition xsi:type="MyObjectBuilder_FactionIconsDefinition">
+        <Id Type="MyObjectBuilder_FactionIconsDefinition" Subtype="IFM-Logo" />
+        <BackgroundColorRanges>
+            <Color x="26.6" y="45.6" z="15.4" />
+        </BackgroundColorRanges>
+        <Icon>Data\IFM\Textures\FactionLogo\IFM.png</Icon>
+		
+	</Definition>
+	
+</Definitions>	

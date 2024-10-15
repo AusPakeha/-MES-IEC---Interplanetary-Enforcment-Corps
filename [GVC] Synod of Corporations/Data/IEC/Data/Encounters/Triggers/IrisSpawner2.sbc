@@ -1,0 +1,108 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-Trigger-IrisSpawner</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:PlayerNear]
+        [TargetDistance:3000]
+
+        [MinCooldownMs:5000]
+        [MaxCooldownMs:5001]
+
+        [MaxActions:-1]
+        [Actions:IEC-Action-IrisSpawner]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-Action-IrisSpawner</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [SpawnEncounter:true]
+        [Spawner:IEC-Spawner-IrisSpawnerA]
+        [Spawner:IEC-Spawner-IrisSpawnerB]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-Spawner-IrisSpawnerA</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+
+		    [StartsReady:true]
+        [SpawnMinCooldown:180]
+        [SpawnMaxCooldown:300]
+        [MaxSpawns:4]
+
+        [SpawnGroups:IEC-Group-GroupHornetC]
+        [SpawnGroups:IEC-Group-GroupGrowlerC]
+        [SpawnGroups:IEC-Group-GroupBrawlerC]
+        [SpawnGroups:IEC-Group-GroupRazorC]
+        [SpawnGroups:IEC-Group-GroupPenetratorC]
+
+        [UseRelativeSpawnPosition:false]
+        [InheritNpcAltitude:true]
+        [MinDistance:500]
+        [MaxDistance:800]
+        [MinAltitude:500]
+        [MaxAltitude:800]
+        [IgnoreSafetyChecks:true]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-Spawner-IrisSpawnerB</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+
+		    [StartsReady:true]
+        [SpawnMinCooldown:180]
+        [SpawnMaxCooldown:300]
+        [MaxSpawns:2]
+
+        [SpawnGroups:IEC-Group-GroupHornetC]
+        [SpawnGroups:IEC-Group-GroupGrowlerC]
+        [SpawnGroups:IEC-Group-GroupBrawlerC]
+        [SpawnGroups:IEC-Group-GroupRazorC]
+        [SpawnGroups:IEC-Group-GroupPenetratorC]
+
+        [UseRelativeSpawnPosition:false]
+        [InheritNpcAltitude:true]
+        [MinDistance:500]
+        [MaxDistance:800]
+        [MinAltitude:500]
+        [MaxAltitude:800]
+        [IgnoreSafetyChecks:true]
+
+      </Description>
+    </EntityComponent>
+  </EntityComponents>
+</Definitions>

@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-SpawnConditions-Easy</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:250]
+		
+		    [SkipVoxelSpawnChecks:false]
+		
+		    [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		    [PlanetaryInstallationChance:70]
+		    [MinWaterDepth:150]
+
+        [FactionOwner:IEC]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:1000]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-SpawnConditions-Medium</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:250]
+		
+		    [SkipVoxelSpawnChecks:false]
+
+		    [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		    [PlanetaryInstallationChance:70]
+		    [MinWaterDepth:170]
+
+        [FactionOwner:IEC]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:2500]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-SpawnConditions-MediumGroup</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:250]
+		
+		    [SkipVoxelSpawnChecks:false]
+
+		    [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		    [PlanetaryInstallationChance:70]
+		    [MinWaterDepth:200]
+
+        [FactionOwner:IEC]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:2500]
+		
+        [PrefabSpawningMode:RandomSelectedIndexes]
+        [PrefabIndexGroupNames:First]
+        [PrefabIndexGroupValues:0]
+        [PrefabIndexGroupNames:First]
+        [PrefabIndexGroupValues:1]
+        [PrefabIndexGroupNames:Second]
+        [PrefabIndexGroupValues:2]
+        [PrefabIndexGroupNames:Second]
+        [PrefabIndexGroupValues:3]
+        [PrefabIndexGroupNames:Second]
+        [PrefabIndexGroupValues:4]		
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-SpawnConditions-Hard</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:250]
+		
+		    [SkipVoxelSpawnChecks:false]
+
+		    [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		    [PlanetaryInstallationChance:70]
+		    [MinWaterDepth:170]
+
+        [FactionOwner:IEC]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:5000]		
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-SpawnConditions-HardGroup</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:250]
+		
+	    	[SkipVoxelSpawnChecks:false]
+
+		    [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		    [PlanetaryInstallationChance:70]
+	    	[MinWaterDepth:200]
+
+        [FactionOwner:IEC]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:5000]
+
+        [PrefabSpawningMode:RandomSelectedIndexes]
+        [PrefabIndexGroupNames:First]
+        [PrefabIndexGroupValues:0]
+        [PrefabIndexGroupNames:First]
+        [PrefabIndexGroupValues:1]
+        [PrefabIndexGroupNames:Second]
+        [PrefabIndexGroupValues:2]
+        [PrefabIndexGroupNames:Second]
+        [PrefabIndexGroupValues:3]
+        [PrefabIndexGroupNames:Second]
+        [PrefabIndexGroupValues:4]		
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-SpawnConditions-Boss</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+		
+	    	[SkipVoxelSpawnChecks:false]
+
+	    	[PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		    [PlanetaryInstallationChance:10]
+	    	[MinWaterDepth:200]
+
+        [FactionOwner:IEC]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:7000]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

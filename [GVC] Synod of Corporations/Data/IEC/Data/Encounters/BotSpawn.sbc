@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>IEC-DefBot</SubtypeId>
+      </Id>
+      <Description>
+
+      [MES Bot Spawn]
+      
+      [BotType:Police_Bot]
+      [BotDisplayName:Naval Personel]
+
+      [CanUseAirNodes:false]	
+			[UseGroundNodesFirst:true]
+			[CanUseSpaceNodes:false]
+			[IgnoreCombatPhase:true]
+				
+			[CanUseLadders:true]
+			[CanUseSeats:true]
+    
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

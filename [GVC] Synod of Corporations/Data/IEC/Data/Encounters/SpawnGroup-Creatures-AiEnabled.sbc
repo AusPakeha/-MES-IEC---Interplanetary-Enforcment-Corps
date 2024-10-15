@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<SpawnGroups>
+		<!-- AiEnabled Bots -->
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>IEC-DefenseBots</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+
+				[CreatureSpawn:true]
+				[CreatureIds:Police_Bot]
+				
+				[AdminSpawnOnly:true]
+				
+				[AiEnabledModBots:true]
+				[AiEnabledRole:SOLDIER]
+				
+				[FactionOwner:IEC]
+				
+				[MinCreatureCount:3]
+				[MaxCreatureCount:4]
+				[MinCreatureDistance:10]
+				[MaxCreatureDistance:9]		
+				
+				[CanUseAirNodes:false]	
+				[UseGroundNodesFirst:true]
+				[CanUseSpaceNodes:false]
+				[IgnoreCombatPhase:true]
+				
+				[CanUseLadders:true]
+				[CanUseSeats:true]
+				
+			</Description>
+			<IsPirate>true</IsPirate>
+			<!--Do not edit-->
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="MES-CreaturePrefabDummy">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour/>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+			
+	</SpawnGroups>
+</Definitions>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Factions>
+    
+    <Faction Tag="IFM" Founder="LoveStruckMango">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>InsurgentFreedomMilitiaFaction</SubtypeId>
+      </Id>
+      <DisplayName>Insurgent Freedom Militia</DisplayName>
+	    <Description>The Insurgent Freedom Militia, a force secretly backed by the IEC, is a group of like-minded individuals, aimed at resisting the ever spreading mega corps, power grubbing individuals, and know it all mongers. The IFM grows as more people become resistant to the rule of the governing corporations and they give blueprints to people needing something reliable but easier on the resource budget.</Description>
+      <IsDefault>true</IsDefault>
+      <DefaultRelation>Enemies</DefaultRelation>
+      <AcceptHumans>false</AcceptHumans>
+      <AutoAcceptMember>false</AutoAcceptMember>
+      <StartingBalance>1000000</StartingBalance>
+      <Type>None</Type>
+      <DiscoveredByDefault>false</DiscoveredByDefault>
+      <FactionIcon>Data\IFM\Textures\FactionLogo\IFM.png</FactionIcon>
+    </Faction>
+
+  </Factions>
+</Definitions>

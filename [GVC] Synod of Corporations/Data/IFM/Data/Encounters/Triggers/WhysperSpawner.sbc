@@ -1,0 +1,111 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Trigger-WhysperSpawner</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:PlayerNear]
+        [TargetDistance:1800]
+		
+		    [StartsReady:true]
+
+        [MinCooldownMs:5000]
+        [MaxCooldownMs:5001]
+
+        [MaxActions:-1]
+        [Actions:IFM-Action-WhysperSpawner]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Action-WhysperSpawner</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [SpawnEncounter:true]
+        [Spawner:IFM-Spawner-WhysperSpawnerA]
+        [Spawner:IFM-Spawner-WhysperSpawnerB]
+		
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Spawner-WhysperSpawnerA</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+
+		    [StartsReady:true]
+	  
+		    [SpawningType:CustomSpawn]
+		
+        [SpawnMinCooldown:180000]
+        [SpawnMaxCooldown:300000]
+		
+        [MaxSpawns:2]
+
+        [SpawnGroups:IFM-Group-RazorG]		
+
+        [UseRelativeSpawnPosition:false]
+        [InheritNpcAltitude:true]
+        [MinDistance:100]
+        [MaxDistance:150]
+        [MinAltitude:500]
+        [MaxAltitude:800]
+        [IgnoreSafetyChecks:true]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Spawner-WhysperSpawnerB</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+
+        [StartsReady:true]
+        
+        [SpawningType:CustomSpawn]
+		
+        [SpawnMinCooldown:180000]
+        [SpawnMaxCooldown:300000]
+		
+        [MaxSpawns:2]
+
+        [SpawnGroups:IFM-Group-RazorA]		
+
+        [UseRelativeSpawnPosition:false]
+        [InheritNpcAltitude:true]
+        [MinDistance:100]
+        [MaxDistance:150]
+        [MinAltitude:500]
+        [MaxAltitude:800]
+        [IgnoreSafetyChecks:true]
+
+      </Description>
+    </EntityComponent>
+  </EntityComponents>
+</Definitions>

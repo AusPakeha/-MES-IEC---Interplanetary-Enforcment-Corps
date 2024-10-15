@@ -1,0 +1,856 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <!-- AiEnabled Bots -->
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>IEC-DefenseBots</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+
+				[CreatureSpawn:true]
+				[CreatureIds:Police_Bot]
+				
+				[AdminSpawnOnly:true]
+				
+				[AiEnabledModBots:true]
+				[AiEnabledRole:SOLDIER]
+				
+				[FactionOwner:IEC]
+				
+				[MinCreatureCount:3]
+				[MaxCreatureCount:4]
+				[MinCreatureDistance:10]
+				[MaxCreatureDistance:9]		
+				
+				[CanUseAirNodes:false]	
+				[UseGroundNodesFirst:true]
+				[CanUseSpaceNodes:false]
+				[IgnoreCombatPhase:true]
+				
+				[CanUseLadders:true]
+				[CanUseSeats:true]
+				
+			</Description>
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="MES-CreaturePrefabDummy">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour/>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-Stingray</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Stingray Attack Craft-V">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Fighters</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-Strike</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Strike Fighter">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Fighters</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-HornetC</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Hornet-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-PenetratorC</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Penetrator-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-RazorC</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Razor-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-BrawlerC</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Brawler-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-GrowlerC</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Growler-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-Peragrin</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Peragrin Attack Helicoptor">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Fighters</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-Tempest</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) HILACAN-G Tempest Tamer">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Fighters</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+	
+	  <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-RazorG</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Razor Gatling Drone">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Fighters</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+	
+	  <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-RazorA</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Razor Autocannon Drone">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Fighters</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+	
+	  <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-MixRazor</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>10.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Razor Gatling Drone">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Fighters</Behaviour>
+        </Prefab>
+		    <Prefab SubtypeId="(NPC-IEC) Razor Autocannon Drone">
+          <Position>
+            <X>150.0</X>
+            <Y>50.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Fighters</Behaviour>
+        </Prefab>
+		    <Prefab SubtypeId="(NPC-IEC) Razor Gatling Drone">
+          <Position>
+            <X>-150.0</X>
+            <Y>50.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Fighters</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-Strike</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>10.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Strike Fighter">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Fighters</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Strike Fighter">
+          <Position>
+            <X>100.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Fighters</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Strike Fighter">
+          <Position>
+            <X>-100.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Fighters</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+	
+	  <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-GroupHornet</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>10.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Stingray Attack Craft-V">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Fighters</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Stingray Attack Craft-V">
+          <Position>
+            <X>100.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Fighters</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Stingray Attack Craft-V">
+          <Position>
+            <X>-100.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Fighters</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-HILACAN</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>10.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) HILACAN-G Tempest Tamer">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Fighters</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Stingray Attack Craft-V">
+          <Position>
+            <X>100.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Fighters</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Stingray Attack Craft-V">
+          <Position>
+            <X>-100.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Fighters</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-GroupHornetC</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>10.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Hornet-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Hornet-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Hornet-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-GroupPenetratorC</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>10.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Penetrator-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Penetrator-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Penetrator-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-GroupRazorC</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>10.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Razor-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Razor-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Razor-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-GroupBrawlerC</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>10.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Brawler-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Brawler-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Brawler-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-GroupGrowlerC</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>10.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Growler-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Growler-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IEC) Growler-C">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-Strike</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+</Definitions>

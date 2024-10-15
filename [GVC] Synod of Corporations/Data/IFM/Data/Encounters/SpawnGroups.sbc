@@ -1,0 +1,314 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <!-- AiEnabled Bots -->
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>IFM-DefenseBots</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+
+				[CreatureSpawn:true]
+				[CreatureIds:Police_Bot]
+				
+				[AdminSpawnOnly:true]
+				
+				[AiEnabledModBots:true]
+				[AiEnabledRole:SOLDIER]
+				
+				[FactionOwner:IFM]
+				
+				[MinCreatureCount:3]
+				[MaxCreatureCount:4]
+				[MinCreatureDistance:10]
+				[MaxCreatureDistance:9]		
+				
+				[CanUseAirNodes:false]	
+				[UseGroundNodesFirst:true]
+				[CanUseSpaceNodes:false]
+				[IgnoreCombatPhase:true]
+				
+				[CanUseLadders:true]
+				[CanUseSeats:true]
+				
+			</Description>
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="MES-CreaturePrefabDummy">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour/>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-Wasp</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IFM) Wasp Explorer">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-Fighters</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-Hornet</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IFM) Hornet Attack Craft">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-Fighters</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+	
+	  <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-RazorG</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IFM) Razor Gatling Drone">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-Fighters</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+	
+	  <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-RazorA</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IFM) Razor Autocannon Drone">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-Fighters</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+	
+	  <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-MixRazor</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>10.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IFM) Razor Gatling Drone">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-Fighters</Behaviour>
+        </Prefab>
+		    <Prefab SubtypeId="(NPC-IFM) Razor Autocannon Drone">
+          <Position>
+            <X>150.0</X>
+            <Y>50.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-Fighters</Behaviour>
+        </Prefab>
+		    <Prefab SubtypeId="(NPC-IFM) Razor Gatling Drone">
+          <Position>
+            <X>-150.0</X>
+            <Y>50.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-Fighters</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+	
+	  <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-GroupHornet</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>10.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IFM) Hornet Attack Craft">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-Fighters</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IFM) Hornet Attack Craft">
+          <Position>
+            <X>100.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-Fighters</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-IFM) Hornet Attack Craft">
+          <Position>
+            <X>-100.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-Fighters</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-Barracuda</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IFM) Barracuda Fast Assault Boat">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>20.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-Zodiac</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+  </SpawnGroups>
+</Definitions>

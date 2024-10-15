@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+    <!--Holt-->
+	  <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-Lance</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IEC-Manipulation-MixedLoot]
+		    [SpawnConditionsProfiles:IEC-SpawnConditions-Medium]
+		
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+	
+        [RandomizeWeapons:false]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+		
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>6.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Lance Destroyer">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-HowlOfTheAbyss</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-AssaultCruiser</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IEC-Manipulation-MixedLoot]
+		    [SpawnConditionsProfiles:IEC-SpawnConditions-Medium]
+		
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+	
+        [RandomizeWeapons:false]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+		
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>6.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Heavy Assault Cruiser">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-HowlOfTheAbyss</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-RailgunCruiser</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IEC-Manipulation-MixedLoot]
+		    [SpawnConditionsProfiles:IEC-SpawnConditions-Medium]
+		
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+	
+        [RandomizeWeapons:false]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+		
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>6.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Heavy Railgun Cruiser">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-HowlOfTheAbyss</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-PresisionCruiser</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IEC-Manipulation-MixedLoot]
+		    [SpawnConditionsProfiles:IEC-SpawnConditions-Medium]
+		
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+	
+        [RandomizeWeapons:false]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+		
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>6.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Pecision Assault Cruiser">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-HowlOfTheAbyss</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-RapidCruiser</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IEC-Manipulation-MixedLoot]
+		    [SpawnConditionsProfiles:IEC-SpawnConditions-Medium]
+		
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+	
+        [RandomizeWeapons:false]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+		
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>6.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Rapid Assault Cruiser">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-HowlOfTheAbyss</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+</Definitions>

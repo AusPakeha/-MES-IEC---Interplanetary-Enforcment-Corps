@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+    
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-FLB</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+		    [SpawnConditionsProfiles:IFM-SpawnConditions-Boss]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+
+        [MinimumPlayerTime:1200]
+        [MaximumPlayerTime:2100]
+        [FailedDroneSpawnResetsPlayerTime:true]
+		
+		    [MinimumPlanetAltitude:5]
+        [AiEnabledReady:true]
+		
+	    	[ManipulationGroups:IFM-Manipulation-AdvancedLoot]
+		
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+        
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [RandomizeWeapons:false]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IFM) Floating Liberation Base">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>5</Speed>
+          <Behaviour>IFM-Behavior-Boss</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+</Definitions>

@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+	  <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-HardGroup</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+        [ManipulationGroups:IEC-Manipulation-MixedLoot]
+        [SpawnConditionsProfiles:IEC-SpawnConditions-HardGroup]
+		
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+        [UseStaticGuns:true]
+        [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+	
+        [RandomizeWeapons:false]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+		
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Lance Destroyer">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-HowlOfTheAbyss</Behaviour>
+        </Prefab>
+		
+		    <Prefab SubtypeId="(NPC-IEC) Trident Destroyer">
+          <Position>
+            <X>100.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-HowlOfTheAbyss</Behaviour>
+        </Prefab>
+		
+		    <Prefab SubtypeId="(NPC-IEC) Ascunder Heavy Patrol Boat">
+          <Position>
+            <X>-100.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-SharkBait</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+  </SpawnGroups>
+</Definitions>

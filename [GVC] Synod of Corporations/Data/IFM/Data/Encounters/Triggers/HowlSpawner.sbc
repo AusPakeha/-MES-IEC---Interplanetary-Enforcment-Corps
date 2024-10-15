@@ -1,0 +1,100 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Trigger-HowlSpawner</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:PlayerNear]
+        [TargetDistance:2500]
+
+        [MinCooldownMs:5000]
+        [MaxCooldownMs:5001]
+
+        [MaxActions:-1]
+        [Actions:IFM-Action-HowlSpawner]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Action-HowlSpawner</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [SpawnEncounter:true]
+        [Spawner:IFM-Spawner-HowlSpawnerA]
+        [Spawner:IFM-Spawner-HowlSpawnerB]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Spawner-HowlSpawnerA</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+
+		    [StartsReady:true]
+        [SpawnMinCooldown:180]
+        [SpawnMaxCooldown:300]
+        [MaxSpawns:4]
+
+        [SpawnGroups:IFM-Group-Wasp]		
+
+        [UseRelativeSpawnPosition:false]
+        [InheritNpcAltitude:true]
+        [MinDistance:500]
+        [MaxDistance:800]
+        [MinAltitude:500]
+        [MaxAltitude:800]
+        [IgnoreSafetyChecks:true]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Spawner-HowlSpawnerB</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+
+		    [StartsReady:true]
+        [SpawnMinCooldown:180]
+        [SpawnMaxCooldown:300]
+        [MaxSpawns:4]
+
+        [SpawnGroups:IFM-Group-Hornet]		
+
+        [UseRelativeSpawnPosition:false]
+        [InheritNpcAltitude:true]
+        [MinDistance:500]
+        [MaxDistance:800]
+        [MinAltitude:500]
+        [MaxAltitude:800]
+        [IgnoreSafetyChecks:true]
+
+      </Description>
+    </EntityComponent>
+  </EntityComponents>
+</Definitions>

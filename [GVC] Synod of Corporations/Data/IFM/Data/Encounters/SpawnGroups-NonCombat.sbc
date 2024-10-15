@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+	  <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-SmallCargo</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+	   
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IFM-Manipulation-MixedLoot]
+		    [SpawnConditionsProfiles:IFM-SpawnConditions-Cargo]
+		
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>10.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IFM) Small Cargo Vessel">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-NonCombat</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+	  <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-UssuriCargo</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+	   
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IFM-Manipulation-MixedLoot]
+		    [SpawnConditionsProfiles:IFM-SpawnConditions-Cargo]
+		
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>10.0</Frequency>
+      <Prefabs>
+		    <Prefab SubtypeId="(NPC-IFM) Ussuri Cargo Vessel">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-NonCombat</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+	  <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-OcelotCargo</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+	   
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IFM-Manipulation-MixedLoot]
+		    [SpawnConditionsProfiles:IFM-SpawnConditions-Cargo]
+		
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>10.0</Frequency>
+      <Prefabs>
+		    <Prefab SubtypeId="(NPC-IFM) Ocelot Cargo Vessel">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-NonCombat</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+	  <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-MediumCargo</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+	   
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IFM-Manipulation-MixedLoot]
+		    [SpawnConditionsProfiles:IFM-SpawnConditions-Cargo]
+		
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>6.0</Frequency>
+      <Prefabs>
+		    <Prefab SubtypeId="(NPC-IFM) Medium Cargo Vessel">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-NonCombat</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>	
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-LargeCargo</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+	   
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IFM-Manipulation-MixedLoot]
+		    [SpawnConditionsProfiles:IFM-SpawnConditions-Cargo]
+		
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>6.0</Frequency>
+      <Prefabs>
+		    <Prefab SubtypeId="(NPC-IFM) Large Cargo Vessel">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-NonCombat</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+  </SpawnGroups>
+</Definitions>

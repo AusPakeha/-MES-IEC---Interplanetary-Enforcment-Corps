@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Manipulation-BasicLoot</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+
+        [UseLootProfiles:true]
+        [ClearExistingContainerTypes:true]
+        [LootProfiles:MES-Loot-BasicContainers]
+        [LootProfiles:MES-Loot-BasicContainersLarge]
+        [LootProfiles:MES-Loot-Corpses]
+        [LootProfiles:MES-Loot-Freight]
+        [LootProfiles:MES-Loot-Lockers]
+        [LootProfiles:MES-Loot-WeaponRacks]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Manipulation-MixedLoot</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+
+        [UseLootProfiles:true]
+        [ClearExistingContainerTypes:true]
+        [LootProfiles:MES-Loot-MixedContainers]
+        [LootProfiles:MES-Loot-MixedContainersLarge]
+        [LootProfiles:MES-Loot-Corpses]
+        [LootProfiles:MES-Loot-Freight]
+        [LootProfiles:MES-Loot-Lockers]
+        [LootProfiles:MES-Loot-WeaponRacks]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Manipulation-AdvancedLoot</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+
+        [UseLootProfiles:true]
+        [ClearExistingContainerTypes:true]
+        [LootProfiles:MES-Loot-AdvancedContainers]
+        [LootProfiles:MES-Loot-AdvancedContainersLarge]
+        [LootProfiles:MES-Loot-Corpses]
+        [LootProfiles:MES-Loot-Freight]
+        [LootProfiles:MES-Loot-Lockers]
+        [LootProfiles:MES-Loot-WeaponRacks]
+
+      </Description>
+
+    </EntityComponent>  
+
+  </EntityComponents>
+</Definitions>

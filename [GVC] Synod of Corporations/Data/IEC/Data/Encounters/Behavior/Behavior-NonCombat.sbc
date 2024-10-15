@@ -1,0 +1,124 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-Behavior-NonCombat</SubtypeId>
+      </Id>
+    	<Description>
+
+    		[RivalAI Behavior]  
+        	[BehaviorName:CargoShip]
+       		[AutopilotData:IEC-Autopilot-NonCombat]
+        	[TriggerGroups:IEC-TriggerGroup-PreSpawn]
+          	[Triggers:IEC-Trigger-BotCrew]
+
+    	</Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+    	<Id>
+        	<TypeId>Inventory</TypeId>
+        	<SubtypeId>IEC-Autopilot-NonCombat</SubtypeId>
+    	</Id>
+    	<Description>
+
+			[RivalAI Autopilot]
+      
+			[DisableInertiaDampeners:false]
+        	[SlowDownOnWaypointApproach:false]
+        	[ExtraSlowDownDistance:0]
+        	[FlyLevelWithGravity:true]
+        	[AllowStrafing:false]
+        	[WaypointTolerance:30]
+        	[IdealMinSpeed:10]
+        	[IdealMaxSpeed:100]
+		
+			[UseVelocityCollisionEvasion:true]
+			[CollisionEvasionWaypointDistance:100]
+		
+			[RotationMultiplier:0.25]
+
+        	[WaypointWaitTimeTrigger:15]
+      
+    	</Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+    	<Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>IEC-WaypointProfile</SubtypeId>
+    	</Id>
+    	<Description>
+
+        	[RivalAI Waypoint]
+        
+        	[Waypoint:RelativeRandom]
+        	[RelativeEntity:Self]
+
+        	[MinDistance:50]
+        	[MaxDistance:150]
+
+        	[InheritRelativeAltitude:true]
+      
+    	</Description>
+    </EntityComponent>
+
+<!-- [NPC's] Defence Bots -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+			<TypeId>Inventory</TypeId>
+			<SubtypeId>IEC-DefenseBots-Trigger</SubtypeId>
+		</Id>
+		<Description>
+
+			[RivalAI Trigger]
+			
+			[UseTrigger:true]
+			[StartsReady:true]
+			[Type:Compromised]
+			
+			[Actions:IEC-DefensBots-Action-Spawn]		
+
+		</Description>
+		</EntityComponent>
+    			
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+			<TypeId>Inventory</TypeId>
+			<SubtypeId>IEC-DefensBots-Action-Spawn</SubtypeId>
+		</Id>
+		<Description>
+
+			[RivalAI Action]
+
+			[SpawnEncounter:true]
+			[Spawner:IEC-DefenseBots-Spawner]
+
+		</Description>
+		</EntityComponent>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		<Id>
+			<TypeId>Inventory</TypeId>
+			<SubtypeId>IEC-DefenseBots-Spawner</SubtypeId>
+		</Id>
+		<Description>
+
+			[RivalAI Spawn]
+
+			[UseSpawn:true]
+
+			[SpawnMinCooldown:1]
+			[SpawnMaxCooldown:2]
+			[MaxSpawns:1]
+			[SpawningType:Creature]
+			[SpawnGroups:IEC-DefenseBots]
+			[ProcessAsAdminSpawn:true]
+
+		</Description>
+		</EntityComponent>
+        
+  </EntityComponents>
+</Definitions>

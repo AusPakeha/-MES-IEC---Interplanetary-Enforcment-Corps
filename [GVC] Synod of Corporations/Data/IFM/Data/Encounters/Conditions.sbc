@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-SpawnConditions-Easy</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:250]
+		
+		    [SkipVoxelSpawnChecks:false]
+        [SkipGridSpawnChecks:false]
+		
+		    [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		    [PlanetaryInstallationChance:70]
+		    [MinWaterDepth:100]
+
+        [FactionOwner:IFM]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:500]
+
+      </Description>
+
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-SpawnConditions-Cargo</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:250]
+		
+		    [SkipVoxelSpawnChecks:false]
+
+		    [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		    [PlanetaryInstallationChance:70]
+		    [MinWaterDepth:100]
+
+        [FactionOwner:IFM]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:300]	
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-SpawnConditions-Medium</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:250]
+		
+		    [SkipVoxelSpawnChecks:false]
+
+		    [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		    [PlanetaryInstallationChance:5 0]
+		    [MinWaterDepth:170]
+
+        [FactionOwner:IFM]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:1000]
+
+      </Description>
+
+    </EntityComponent>
+
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-SpawnConditions-MediumGroup</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:250]
+		
+		    [SkipVoxelSpawnChecks:false]
+
+		    [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		    [PlanetaryInstallationChance:50]
+		    [MinWaterDepth:200]
+
+        [FactionOwner:IFM]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:1000]
+		
+        [PrefabSpawningMode:RandomSelectedIndexes]
+        [PrefabIndexGroupNames:First]
+        [PrefabIndexGroupValues:0]
+        [PrefabIndexGroupNames:First]
+        [PrefabIndexGroupValues:1]
+        [PrefabIndexGroupNames:Second]
+        [PrefabIndexGroupValues:2]
+        [PrefabIndexGroupNames:Second]
+        [PrefabIndexGroupValues:3]
+        [PrefabIndexGroupNames:Second]
+        [PrefabIndexGroupValues:4]		
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-SpawnConditions-Hard</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:250]
+		
+		    [SkipVoxelSpawnChecks:false]
+
+		    [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		    [PlanetaryInstallationChance:30]
+		    [MinWaterDepth:170]
+
+        [FactionOwner:IFM]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:2500]		
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-SpawnConditions-HardGroup</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:250]
+		
+	    	[SkipVoxelSpawnChecks:false]
+
+		    [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		    [PlanetaryInstallationChance:30]
+	    	[MinWaterDepth:200]
+
+        [FactionOwner:IFM]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:2500]
+
+        [PrefabSpawningMode:RandomSelectedIndexes]
+        [PrefabIndexGroupNames:First]
+        [PrefabIndexGroupValues:0]
+        [PrefabIndexGroupNames:First]
+        [PrefabIndexGroupValues:1]
+        [PrefabIndexGroupNames:Second]
+        [PrefabIndexGroupValues:2]
+        [PrefabIndexGroupNames:Second]
+        [PrefabIndexGroupValues:3]
+        [PrefabIndexGroupNames:Second]
+        [PrefabIndexGroupValues:4]		
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-SpawnConditions-Boss</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+		
+	    	[SkipVoxelSpawnChecks:false]
+
+	    	[PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		    [PlanetaryInstallationChance:10]
+	    	[MinWaterDepth:200]
+
+        [FactionOwner:IFM]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:5000]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-SpawnConditions-Atmo</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:250]
+		
+		    [SkipVoxelSpawnChecks:false]
+        [SkipGridSpawnChecks:false]
+        [PlanetRequiresOxygen:true]
+		
+		    [AtmosphericCargoShip:true]
+        [SkipAirDensityCheck:false]
+		    [AtmosphericCargoShipChance:70]
+
+        [FactionOwner:IFM]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:500]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

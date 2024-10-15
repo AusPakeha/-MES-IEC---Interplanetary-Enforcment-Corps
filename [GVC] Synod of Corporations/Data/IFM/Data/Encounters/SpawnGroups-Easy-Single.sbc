@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-Warrior</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+	   
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IFM-Manipulation-BasicLoot]
+		    [SpawnConditionsProfiles:IFM-SpawnConditions-Easy]
+		
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+	    <IsPirate>true</IsPirate>
+      <Frequency>10.0</Frequency>
+	  
+      <Prefabs>
+	      <Prefab SubtypeId="(NPC-IFM) Warrior Class Patrol Boat">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-SharkBait</Behaviour>
+        </Prefab>
+      </Prefabs>
+	  </SpawnGroup>	
+	  <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-Tomahawk</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+	   
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IFM-Manipulation-BasicLoot]
+		    [SpawnConditionsProfiles:IFM-SpawnConditions-Easy]
+		
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+	  
+      <IsPirate>true</IsPirate>
+      <Frequency>6.0</Frequency>
+	  
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IFM) Tomahawk Class Cutter">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-SharkBait</Behaviour>
+        </Prefab>
+		  </Prefabs>
+	  </SpawnGroup>
+	
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-SClass</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+	   
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IFM-Manipulation-BasicLoot]
+		    [SpawnConditionsProfiles:IFM-SpawnConditions-Easy]
+		
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+	  
+      <IsPirate>true</IsPirate>
+      <Frequency>3.0</Frequency>
+	  
+      <Prefabs>
+	      <Prefab SubtypeId="(NPC-IFM) S-Class Patrol Sub">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-SharkBait</Behaviour>
+        </Prefab>
+		  </Prefabs>
+	  </SpawnGroup>	
+  </SpawnGroups>
+</Definitions>

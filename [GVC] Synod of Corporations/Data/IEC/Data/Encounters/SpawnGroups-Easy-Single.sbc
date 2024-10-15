@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-AscunderC</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+	   
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IEC-Manipulation-BasicLoot]
+		    [SpawnConditionsProfiles:IEC-SpawnConditions-Easy]
+		
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+	    <IsPirate>true</IsPirate>
+      <Frequency>10.0</Frequency>
+	  
+      <Prefabs>
+	      <Prefab SubtypeId="(NPC-IEC) Ascunder Coastal Gun Boat">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-SharkBait</Behaviour>
+        </Prefab>
+      </Prefabs>
+	  </SpawnGroup>
+
+	  <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-AscunderH</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+	   
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IEC-Manipulation-BasicLoot]
+		    [SpawnConditionsProfiles:IEC-SpawnConditions-Easy]
+		
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+	  
+      <IsPirate>true</IsPirate>
+      <Frequency>6.0</Frequency>
+	  
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Ascunder Heavy Patrol Boat">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-SharkBait</Behaviour>
+        </Prefab>
+		  </Prefabs>
+	  </SpawnGroup>
+	
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-Deepswell</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+	   
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IEC-Manipulation-BasicLoot]
+		    [SpawnConditionsProfiles:IEC-SpawnConditions-Easy]
+		
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+		
+		    [RandomizeWeapons:false]
+
+      </Description>
+	  
+      <IsPirate>true</IsPirate>
+      <Frequency>3.0</Frequency>
+	  
+      <Prefabs>
+	      <Prefab SubtypeId="(NPC-IEC) Deepswell Recon Sub">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IEC-Behavior-SharkBait</Behaviour>
+        </Prefab>
+		  </Prefabs>
+	  </SpawnGroup>	
+
+  </SpawnGroups>
+</Definitions>

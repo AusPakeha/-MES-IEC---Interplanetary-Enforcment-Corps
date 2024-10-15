@@ -1,0 +1,269 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Behavior-HowlOfTheAbyss</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+        [BehaviorName:Nautical]
+
+        [AutopilotData:IFM-Autopilot-HowlOfTheAbyss]
+        [TargetData:IFM-Targeting-Main]
+		    [TargetData:IFM-Targeting-Second]
+		
+        [TriggerGroups:IFM-TriggerGroup-Broadside]
+        [TriggerGroups:IFM-TriggerGroup-PreSpawn]
+        //[Triggers:IFM-Trigger-GrindLarge]
+        
+        [Triggers:IFM-HowlTriggerA]
+        [Triggers:IFM-HowlTriggerB]
+
+        [Triggers:IEC-Trigger-BotCrew]
+
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IFM-Autopilot-HowlOfTheAbyss</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [SlowDownOnWaypointApproach:false]
+        [ExtraSlowDownDistance:0]
+        [FlyLevelWithGravity:false]
+        [AllowStrafing:false]
+        [WaypointTolerance:30]
+        [IdealMinSpeed:10]
+        [IdealMaxSpeed:100]
+
+        [RotationMultiplier:0.25]
+		
+        [UseVelocityCollisionEvasion:true]
+        [CollisionEvasionWaypointDistance:100]
+        [WaypointWaitTimeTrigger:15]
+
+        [EngageDistancePlanet:600]
+        [DisengageDistancePlanet:800]
+
+      </Description>
+    </EntityComponent>
+    
+	  <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>IFM-HowlTriggerA</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+        
+        [Type:PlayerNear]
+        [UseTrigger:true]
+        [TargetDistance:2800]
+        [StartsReady:true]
+        [MaxActions:1]
+        
+        [Actions:IFM-HowlActionA]
+      
+      </Description>
+    </EntityComponent>
+
+	  <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>IFM-HowlActionA</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+        
+      [UseChatBroadcast:true]
+      [ChatData:IFM-HowlChatA]
+
+      </Description>
+    </EntityComponent>
+
+	  <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>IFM-HowlChatA</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Chat]
+          
+        [UseChat:true]
+        [StartsReady:true]
+        [Chance:100]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [SendToAllOnlinePlayers:false]
+        [IgnoreAntennaRequirement:false]
+          
+        [Author:IFM Captain]
+        [Color:Red]
+
+        [ChatMessages:{PlayerName},You have o'^BoH warned by my comrades, You will U2T no warnings t^3b me!]
+        [ChatAudio:ArcHudGPSNotification2]
+        [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+	
+	  <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>IFM-HowlTriggerB</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+        
+        [Type:PlayerNear]
+        [UseTrigger:true]
+        [TargetDistance:1900]
+        [StartsReady:true]
+        [MaxActions:1]
+        [MinCooldownMs:120000]
+        [MaxCooldownMs:180000]
+        [Actions:IFM-HowlActionB]
+		
+      </Description>
+    </EntityComponent>
+	
+	  <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>IFM-HowlActionB</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+          
+        [UseChatBroadcast:true]
+        [ChatData:IFM-HowlChatB]
+        
+        [SpawnEncounter:true]
+        [Spawner:IFM-HowlSpawnerB]
+	
+      </Description>
+    </EntityComponent>
+	
+	  <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>IFM-HowlChatB</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Chat]
+          
+        [UseChat:true]
+        [StartsReady:true]
+        [Chance:100]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [SendToAllOnlinePlayers:false]
+        [IgnoreAntennaRequirement:false]
+        
+        [Author:IFM Captain]
+        [Color:Red]
+        
+        [ChatMessages:{PlayerName}, You should have TVdU$bA! Crew! deploy defence MKfX!e and blow them of this '^BoHe^!]
+        [ChatAudio:ArcHudGPSNotification2]
+        [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+	
+	  <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>IFM-HowlSpawnerB</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+        [MaxSpawns:1]
+        
+        [SpawnGroups:IFM-Group-MixRazor]
+        
+        [UseRelativeSpawnPosition:false]
+        [MinDistance:100]
+        [MaxDistance:200]
+        [MinAltitude:800]
+        [MaxAltitude:1200]
+        [IgnoreSafetyChecks:true]
+      
+      </Description>
+    </EntityComponent>
+
+<!-- [NPC's] Defence Bots -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>IFM-DefenseBots-Trigger</SubtypeId>
+			</Id>
+			<Description>
+
+			[RivalAI Trigger]
+			
+			[UseTrigger:true]
+			[StartsReady:true]
+			[Type:Compromised]
+			
+			[Actions:IFM-DefensBots-Action-Spawn]		
+
+			</Description>
+		</EntityComponent>
+    			
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		  <Id>
+			<TypeId>Inventory</TypeId>
+			<SubtypeId>IFM-DefensBots-Action-Spawn</SubtypeId>
+		  </Id>
+		  <Description>
+
+			[RivalAI Action]
+
+			[SpawnEncounter:true]
+			[Spawner:IFM-DefenseBots-Spawner]
+
+		  </Description>
+		</EntityComponent>
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+		  <Id>
+			<TypeId>Inventory</TypeId>
+			<SubtypeId>IFM-DefenseBots-Spawner</SubtypeId>
+		  </Id>
+		  <Description>
+
+			[RivalAI Spawn]
+
+			[UseSpawn:true]
+
+			[SpawnMinCooldown:1]
+			[SpawnMaxCooldown:2]
+			[MaxSpawns:1]
+			[SpawningType:Creature]
+			[SpawnGroups:IFM-DefenseBots]
+			[ProcessAsAdminSpawn:true]
+
+		  </Description>
+		</EntityComponent>
+
+  </EntityComponents>
+</Definitions>

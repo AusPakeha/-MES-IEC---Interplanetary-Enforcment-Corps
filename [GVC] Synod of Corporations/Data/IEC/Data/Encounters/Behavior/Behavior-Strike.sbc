@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-Behavior-Strike</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+        [BehaviorName:Strike]
+
+        [AutopilotData:IEC-Autopilot-Strike]
+        [TargetData:IEC-Targeting-Main]
+		    [TargetData:IEC-Targeting-Second]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>IEC-Autopilot-Strike</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [FlyLevelWithGravity:false]
+        [CollisionEvasionWaypointCalculatedAwayFromEntity:true]
+        [WaypointTolerance:50]
+        [IdealMinSpeed:50]
+        [IdealMaxSpeed:100]
+        [SlowDownOnWaypointApproach:false]
+        [ExtraSlowDownDistance:50]
+
+        [UseProjectileLeadPrediction:true]
+
+        [OffsetPlanetMinDistFromTarget:100]
+        [OffsetPlanetMaxDistFromTarget:150]
+        [OffsetPlanetMinTargetAltitude:50]
+        [OffsetPlanetMaxTargetAltitude:200]
+
+        [IdealPlanetAltitude:100]
+        [MinimumPlanetAltitude:50]
+        [AltitudeTolerance:5]
+
+        [StrikeBeginPlanetAttackRunDistance:600]
+        [StrikeBreakawayDistance:100]
+
+      </Description>
+    </EntityComponent>
+  </EntityComponents>
+</Definitions>

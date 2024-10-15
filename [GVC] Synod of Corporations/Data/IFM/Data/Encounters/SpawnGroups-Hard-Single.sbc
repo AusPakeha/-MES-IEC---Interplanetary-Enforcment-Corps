@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+    <!--Morden-->
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-Morden</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IFM-Manipulation-MixedLoot]
+        [SpawnConditionsProfiles:IFM-SpawnConditions-Hard]
+			
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+        [UseStaticGuns:true]
+        [UseTurrets:true]
+
+        [RandomizeWeapons:false]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IFM) Morden Class Cruiser">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-HowlOfTheAbyss</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--Guardian Carrier-->
+	  <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-Guardian</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IFM-Manipulation-MixedLoot]
+		    [SpawnConditionsProfiles:IFM-SpawnConditions-Hard]
+		
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+		    [UseStaticGuns:true]
+		    [UseTurrets:true]
+	
+        [RandomizeWeapons:false]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+		
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>6.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IFM) Guardian Class Carrier">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-CalypsoEnvy2</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--Judgement-->
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IFM-Group-Judgement</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+		
+		    [ManipulationGroups:IFM-Manipulation-MixedLoot]
+        [SpawnConditionsProfiles:IFM-SpawnConditions-Hard]
+			
+        [FactionOwner:IFM]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+		
+        [UseStaticGuns:true]
+        [UseTurrets:true]
+
+        [RandomizeWeapons:false]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IFM) Judgement Class Battleship">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>IFM-Behavior-HowlOfTheAbyss</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+  </SpawnGroups>
+</Definitions>

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+    
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>IEC-Group-EFB</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+		    [SpawnConditionsProfiles:IEC-SpawnConditions-Boss]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
+
+        [MinimumPlayerTime:1200]
+        [MaximumPlayerTime:2100]
+        [FailedDroneSpawnResetsPlayerTime:true]
+		
+		    [MinimumPlanetAltitude:5]
+        [AiEnabledReady:true]
+		
+	    	[ManipulationGroups:IEC-Manipulation-AdvancedLoot]
+		
+        [FactionOwner:IEC]
+        [ReplenishSystems:true]
+        
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [UseStaticGuns:true]
+        [UseTurrets:true]
+        [UseBarrageFire:true]
+
+        [UseAmmoReplenish:true]
+        [AmmoReplenishClipAmount:4]
+        [MaxAmmoReplenishments:2]
+
+        [RandomizeWeapons:false]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-IEC) Enforcius Floating base (EFB)">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>5</Speed>
+          <Behaviour>IEC-Behavior-Boss</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+</Definitions>
